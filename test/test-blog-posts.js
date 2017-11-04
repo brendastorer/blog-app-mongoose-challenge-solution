@@ -71,7 +71,7 @@ describe('Blog Posts API resource', function() {
           return BlogPost.count();
         })
         .then(function(count) {
-          res.body.should.have.length.of(count);
+          res.body.should.have.lengthOf(count);
         });
     });
 
